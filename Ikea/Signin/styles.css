@@ -1,0 +1,26 @@
+.ikea-left {
+    background-color: #0058a3;
+}
+
+.login-box {
+    max-width: 420px;
+    padding: 20px;
+}
+
+.form-control {
+    height: 48px;
+    border-radius: 6px;
+}
+
+.bi-eye {
+    cursor: pointer;
+    color: #555;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+}
+html, body {
+    height: 100%;
+}
