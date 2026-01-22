@@ -44,7 +44,8 @@
     color: #111;
     background: #f5f5f5;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 6px;
+    height: auto;
 }
 
 .category-card img {
@@ -62,3 +63,45 @@
     border: solid;
     border-color: black;
 }
+
+.container-fluid-a {
+    display: grid;
+    grid-template-columns: 681px 334px 334px;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Big image */
+#leftcolimg {
+    width: 681px;
+    height: 794px;
+    object-fit: cover;
+    grid-row: span 2;
+}
+
+/* Right columns */
+.right-col,
+.right-end-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Images */
+#secA, #secD {
+    width: 334px;
+    height: 335px;
+    object-fit: cover;
+}
+
+#secB, #secC {
+    width: 334px;
+    height: 447px;
+    object-fit: cover;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
