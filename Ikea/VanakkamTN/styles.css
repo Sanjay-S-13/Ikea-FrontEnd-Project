@@ -32,3 +32,192 @@ body {
 .intro-group-title{
     font-weight: bolder;
 }
+
+.category-scroll-2 {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 10px;
+    scroll-behavior:smooth;
+}
+.category-scroll-2::-webkit-scrollbar {
+    display: none;
+}
+.category-card-2 {
+    flex-shrink: 0;
+    height: 325px;
+    width: 233px;
+    text-align: center;
+    text-decoration: none;
+    color: #111;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+.category-card-2 p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.category-card-2:hover {
+    text-decoration: underline;
+}
+.category-card-2-img{
+    height: 265px;
+    width: 185px;
+}
+.category-scroll-2-title{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: xx-large
+}
+
+html, body {
+    overflow-x: hidden;
+} 
+
+.category-card-2-img-2 {
+    height: 323px;
+    width: 323px;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.category-card-3:hover img {
+    opacity: 0.95;
+    transform: scale(1.02);
+}
+
+.category-card-3:nth-child(1):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-with-glass-doors-black-oak-effect__1104585_pe867753_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(2):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/landskrona-3-seat-sofa-with-chaise-longue-gunnared-dark-grey-metal__0834578_pe680297_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(3):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/hoegvind-pendant-lamp-with-3-lamps-nickel-plated-grey-glass__1045906_pe842768_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(4):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/tonstad-bookcase-brown-stained-oak-veneer__1300166_pe936998_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(5):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/jaettebo-3-seat-modular-sofa-samsala-dark-yellow-green__1139917_pe880567_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(6):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/strandmon-wing-chair-skiftebo-yellow__0837297_pe601176_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(7):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/felsisk-pendant-lamp-with-4-lamps-black__0959709_pe806149_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(8):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/stockholm-coffee-table-walnut-veneer__0212281_pe339545_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(9):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/kivik-4-seat-sofa-with-chaise-longue-kelinge-grey-turquoise__1055848_pe848128_s5.jpg?f=m");
+}
+
+.category-card-3:nth-child(10):hover img {
+    content: url("https://www.ikea.com/in/en/images/products/aesperoed-coffee-table-black-glass-black__1194049_pe901785_s5.jpg?f=m");
+}
+
+.category-card-3 {
+    width: 323px;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    flex-shrink: 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.category-card-3:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.category-card-2-img-2 {
+    width: 100%;
+    height: 323px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-info {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.product-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.product-desc {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.product-rating {
+    font-size: 13px;
+    color: #f5a623;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.product-rating span {
+    color: #555;
+    font-size: 12px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #111;
+}
+
+.ikea-footer {
+  background-color: #f5f5f5;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  font-size: 14px;
+  color: #111;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  font-size: 20px;
+  cursor: pointer;
+}

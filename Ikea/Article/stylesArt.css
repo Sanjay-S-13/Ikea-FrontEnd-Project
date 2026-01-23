@@ -1,0 +1,28 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+.search-box {
+    max-width: 480px;   
+    width: 100%;
+}
+.navbarcontentp{
+    text-decoration: none;
+}
+.navbarcontentp:hover {
+    text-decoration: underline;
+}
+.iconinnavbar{
+    width: 30px;
+    height: auto;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 100px;
+}
+.iconinnavbar:hover{
+    background-color: #c5c5c5;  
+}
+#locationPath{
+    margin-left: 45px;
+    font-size: small;
+    margin-top: 10px;
+}

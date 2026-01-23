@@ -69,14 +69,14 @@ body {
     object-fit: cover;
     grid-row: span 2;
 }
-/* Right columns */
+
 .right-col,
 .right-end-col {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-/* Images */
+
 #secA, #secD {
     width: 334px;
     height: 335px;
