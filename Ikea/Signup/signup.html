@@ -12,55 +12,71 @@
 
 <body>
         
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="https://in.accounts.ikea.com/resources/static/logo.png" alt="ikealogo" style="height: 40px; margin-top: 25px;">
-                
-                <h1 style="margin-top: 30px;">
-                    Create an <span style="color: #007cc1;">IKEA Family</span> <br> Profile
-                </h1>
-                <h6 style="position:relative; margin-top: 20px;">Already have an account?<a href="../Signin/signin.html">Login</a></h6>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="https://in.accounts.ikea.com/resources/static/logo.png" alt="ikealogo" style="height: 40px; margin-top: 25px;">
+            
+            <h1 style="margin-top: 30px;">
+                Create an <span style="color: #007cc1;">IKEA Family</span> <br> Profile
+            </h1>
 
-                <img  src="signupLeftCol.png" alt="just an image" style="width: 400px; margin-top: 30px; position: relative;">
-            </div>
-            <div class="col mt-5">
-                <span>Become a member of IKEA Family today. Did we mention it's free to <br> join? <span style="text-decoration: underline; cursor: pointer;"> Get the details.</span></span>
+            <h6 style="margin-top: 20px;">
+                Already have an account?
+                <a href="../Signin/signin.html">Login</a>
+            </h6>
+
+            <img src="signupLeftCol.png" alt="just an image" style="width: 400px; margin-top: 30px;">
+        </div>
+
+        
+        <div class="col mt-5">
+
+            <form>
+
+                <span>
+                    Become a member of IKEA Family today. Did we mention it's free to <br>join? <span style="text-decoration: underline; cursor: pointer;">Get the details.</span>
+                </span>
 
                 <br>
                 
                 <label class="form-label mt-5" for="fname">First name</label>
-                <input class="form-control" type="text" id="">
+                <input class="form-control" type="text" id="fname" required>
 
-                <label class="form-label mt-2" for="fname">Surname</label>
-                <input class="form-control" type="text" id="">
+                
+                <label class="form-label mt-2" for="sname">Surname</label>
+                <input class="form-control" type="text" id="sname" required>
 
-                <label class="form-label mt-2" for="fname">Birthdate</label>
-                <input class="form-control" type="text" id="">
+               
+                <label class="form-label mt-2" for="birthdate">Birthdate</label>
+                <input class="form-control" type="text" id="birthdate" required>
                 <div class="form-text">DD/MM/YYYY</div>
 
-                <div class="form-floating mt-4">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected></option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                    <option value="3">Not prefer to say</option>
-                </select>
-                <label for="floatingSelect">Gender</label>
+              
+                <label class="form-label mt-4">Gender</label>
+                <div class="form-floating">
+                    <select class="form-select" id="gender" required>
+                        <option value="" selected disabled></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="NA">Not prefer to say</option>
+                    </select>
+                    <label for="gender">Select gender</label>
                 </div>
 
-                <label class="form-label mt-2" for="fname">Post code</label>
-                <input class="form-control" type="text" id="">
+                
+                <label class="form-label mt-2" for="postcode">Post code</label>
+                <input class="form-control" type="text" id="postcode" required>
 
-                <div class="mt-2">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
+           
+                <label class="form-label mt-2" for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
 
-                <label for="inputPassword5" class="form-label mt-2">Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+               
+                <label for="password" class="form-label mt-2">Password</label>
+                <input type="password" id="password" class="form-control" required>
 
-                <div id="passwordHelpBlock" class="form-text">
+                <div class="form-text">
                     Make sure your password contains:
                     <pre>
     Minimum of 8 characters
@@ -71,31 +87,39 @@
                     </pre>
                 </div>
 
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label h5" for="checkDefault">
+                
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="terms" required>
+                    <label class="form-check-label h5" for="terms">
                         I have read and understood the Terms & Conditions and Privacy Policy 
-                </label>
+                    </label>
                 </div>
 
-                <p class="mt-4"><span style="font-weight: bold;">Want to get more out of your <span style="color: #007cc1;">IKEA Family</span> membership?</span>
-Sign up to receive personalised IKEA marketing communications and find out about <span style="font-weight: bold;">special offers, news and tips</span> via:
-</p>
-<input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label h5" for="checkDefault">
+                
+                <p class="mt-4">
+                    <strong>Want to get more out of your <span style="color:#007cc1;">IKEA Family</span> membership?</strong>
+                    Sign up to receive personalised IKEA marketing communications and find out about
+                    <strong>special offers, news and tips</strong> via:
+                </p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="marketing">
+                    <label class="form-check-label h5" for="marketing">
                         All communication methods
                         <br>
-                        <span class="h6">(Email , SMS , Direct Mail)</span>
-                </label>
+                        <span class="h6">(Email, SMS, Direct Mail)</span>
+                    </label>
+                </div>
 
-                <a href="../index.html" type="submit" value="Login" id="sub" class="btn btn-dark w-100 rounded-pill py-3 mt-4">
+                
+                <button type="submit" class="btn btn-dark w-100 rounded-pill py-3 mt-4">
                     Continue to phone verification
-                </a>
+                </button>
 
-            </div>
-        </div> 
-    </div>
-    <script src="script.js"></script>
+            </form>
+        </div>
+    </div> 
+</div>
 
 </body>
 </html>
