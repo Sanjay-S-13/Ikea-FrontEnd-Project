@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA products</title>
+    <link rel="stylesheet" href="productss.css">
+    <link rel="shortcut icon" href="https://www.ikea.com/global/assets/logos/brand/ikea.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="text-white py-3" style="background-color: black;">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-globe"></i>
+                <a href="#" class="navbarcontentp text-white">IN | English</a>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-truck"></i>
+                    <a href="#" class="navbarcontentp text-white">Enter postal code</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shop-window"></i>
+                    <a href="#" class="navbarcontentp text-white" >Select store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!--NavBar-->
+    <div class="navbar py-3 ms-5">
+    <div class="d-flex align-items-center w-100 gap-4">
+
+      <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg"
+           height="40" alt="IKEA">
+
+      <div class="d-none d-lg-flex gap-4 ms-4 ">
+        <a href="../Products/products.html" class="navbarcontentp text-dark">Products</a>
+        <a href="../Article/article.html" class="navbarcontentp text-dark">Article</a>
+        <a href="../Offers/offers.html" class="navbarcontentp text-dark">Offers</a>
+        <a href="#" class="navbarcontentp text-dark" style="text-decoration: underline;">Inspiration</a>
+        <a href="../Design&support/d&s.html" class="navbarcontentp text-dark">Design/Support</a>
+      </div>
+
+      <div class="flex-grow-1 search-box">
+        <div class="input-group rounded-pill bg-light px-2">
+          <span class="input-group-text bg-light border-0">
+            <i  class="bi bi-search"></i>
+          </span>
+
+          <input type="text"
+                 class="form-control bg-light border-0"
+                 placeholder="What are you looking for?">
+
+          <span class="input-group-text bg-light border-0">
+            <i class="bi bi-camera"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-person"></i>
+        <a href="../Signin/signin.html" class="navbarcontentp d-none d-md-inline text-dark">Hey! Log in</a >
+      </div>
+
+      <div class="d-flex gap-4  justify-content-center align-items-center">
+        <i class="bi bi-heart fs-5 iconinnavbar"></i>
+        <i class="bi bi-minecart-loaded fs-5 iconinnavbar"></i>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row mt-5">
+                <a class="h1 text-decoration-none fw-bold titles" >IKEA Family</a> <br>
+                <a class="h5 text-decoration-none fw-light titles mb-5">Enjoy guaranteed discounts on a select range of products. <br>
+                    Not a member yet? Join for free. </a>   
+                <a href="../Signin/signin.html" id="buttons" class="btn">Join IKEA family</a>
+            
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 mt-5">
+                <div class="accordion acc" id="filterAccordion">
+
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSort">
+                            <button class="accordion-button" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSort"
+                                    aria-expanded="true">
+                                Sort
+                            </button>
+                        </h2>
+                        <div id="collapseSort" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="bestMatch">
+                                    <label class="form-check-label" for="bestMatch">
+                                        Best match
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="lowHigh">
+                                    <label class="form-check-label" for="lowHigh">
+                                        Price: low to high
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="highLow">
+                                    <label class="form-check-label" for="highLow">
+                                        Price: high to low
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rating">
+                                    <label class="form-check-label" for="rating">
+                                        Customer rating
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="name">
+                                    <label class="form-check-label" for="name">
+                                        Name
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="popular">
+                                    <label class="form-check-label" for="popular">
+                                        Most popular
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCategory">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCategory">
+                                Category
+                            </button>
+                        </h2>
+                        <div id="collapseCategory" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="storage">
+                                    <label class="form-check-label" for="storage">
+                                        Storage & organisation (27)
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="outdoor">
+                                    <label class="form-check-label" for="outdoor">
+                                        Outdoor products (5)
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="outdoor">
+                                    <label class="form-check-label" for="outdoor">
+                                        Office Furnitures (7)
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="outdoor">
+                                    <label class="form-check-label" for="outdoor">
+                                        Home decor (3)
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="outdoor">
+                                    <label class="form-check-label" for="outdoor" style="text-decoration: underline;">
+                                        +6 more
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSize">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSize">
+                                Price
+                            </button>
+                        </h2>
+                        <div id="collapseSize" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="width">
+                                    <label class="form-check-label" for="width">
+                                        ₹0 - 4,999
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="height">
+                                    <label class="form-check-label" for="height">
+                                        ₹5,000 - 9,999
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="depth">
+                                    <label class="form-check-label" for="depth">
+                                        ₹₹10,000 - 14,999
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="length">
+                                    <label class="form-check-label" for="length">
+                                        ₹₹15,000 - 19,999
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#type">
+                            Type
+                            </button>
+                        </h2>
+                        <div id="type" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <div class="form-check"><input type="checkbox"> Bookcase (5)</div>
+                            <div class="form-check"><input type="checkbox"> Bookcase with glass doors (3)</div>
+                            <div class="form-check"><input type="checkbox"> Desk sit/stand (2)</div>
+                            <div class="form-check"><input type="checkbox"> Mirror (2)</div>
+                            <div class="form-check"><input type="checkbox"> Combo bookcase (1)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#colour">
+                            Colour
+                            </button>
+                        </h2>
+                        <div id="colour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <div class="form-check"><input type="checkbox"> White (13)</div>
+                            <div class="form-check"><input type="checkbox"> Black (3)</div>
+                            <div class="form-check"><input type="checkbox"> Beige (1)</div>
+                            <div class="form-check"><input type="checkbox"> Blue (1)</div>
+                            <div class="form-check"><input type="checkbox"> Pink (1)</div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#material">
+                            Material
+                            </button>
+                        </h2>
+                        <div id="material" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <div class="form-check"><input type="checkbox"> Wood (11)</div>
+                            <div class="form-check"><input type="checkbox"> Glass (4)</div>
+                            <div class="form-check"><input type="checkbox"> Metal (3)</div>
+                            <div class="form-check"><input type="checkbox"> Fabric (1)</div>
+                            </div>
+                        </div>
+                        </div>
+
+            
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#availability">
+                            Availability
+                            </button>
+                        </h2>
+                        <div id="availability" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <div class="form-check">
+                                <input type="checkbox"> Buyable online (23)
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rating">
+                            Customer rating
+                            </button>
+                        </h2>
+                        <div id="rating" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <div class="form-check"><input type="checkbox"> ⭐⭐⭐⭐ & up (22)</div>
+                            <div class="form-check"><input type="checkbox"> ⭐⭐⭐ & up (0)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-9">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <a href="#" class="product-link">
+                            <div class="product-card text-dark">
+                                <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1101301_pe866570_s5.jpg?f=xxs" alt="Hover image">
+                                <span class="product-badge">Top seller</span>
+                                </div>
+
+                                <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                    <span class="current">Rs.22,490</span>
+                                    <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+
+                                <div class="starss">
+                                    <span>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    (1301)
+                                    </span>
+                                </div>
+
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5"></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/vessla-storage-crate-with-castors-white__0534885_pe649302_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/vessla-storage-crate-with-castors-white__0877079_pe649301_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">VESSLA</h6>
+                                <p class="product-desc">Storage crate with castors, white, 39x39 cm (15 ¼x15 ¼ ")</p>
+                                <div class="price">
+                                <span class="current">Rs.269</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.30</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-with-panel-glass-doors-white__0667793_pe714087_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-with-panel-glass-doors-white__1033626_pe837361_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-w-2-drawers-2-mattresses-white-agotnes-firm__1171930_pe893212_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-w-2-drawers-2-mattresses-white-agotnes-firm__1101301_pe866570_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/trotten-desk-sit-stand-white__1020756_pe831984_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/trotten-desk-sit-stand-white__1040109_pe840587_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/renberget-swivel-chair-bomstad-black__1020135_pe831794_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/renberget-swivel-chair-bomstad-black__1025981_pe834276_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-dressing-table-white__0627086_pe693167_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-dressing-table-white__0334918_pe523978_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/nissedal-mirror-black__0637805_pe698601_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/nissedal-mirror-black__1343064_pe949298_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-bookcase-white__0625599_pe692385_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-bookcase-white__1424760_pe979354_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/vittsjoe-nest-of-tables-set-of-2-black-brown-glass__1419821_pe977132_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/vittsjoe-nest-of-tables-set-of-2-black-brown-glass__1438193_pe984637_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/lindbyn-mirror-black__0798821_pe767397_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/lindbyn-mirror-black__0922123_ph168534_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-hoegbo-bookcase-with-glass-doors-white__1104264_pe867570_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-hoegbo-bookcase-with-glass-doors-white__1126231_pe875648_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-w-2-drawers-2-mattresses-white-agotnes-firm__1171930_pe893212_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/trotten-desk-sit-stand-beige-white__1080605_pe858097_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/trotten-desk-sit-stand-white__1020756_pe831984_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-white__1237474_pe917985_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/renberget-swivel-chair-bomstad-black__1020135_pe831794_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/trotten-underframe-sit-stand-f-table-top-white__1040109_pe840587_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/brimnes-dressing-table-white__0627086_pe693167_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-bookcase-white__1424760_pe979354_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/vessla-storage-crate-with-castors-white__0534885_pe649302_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-combination-w-glass-doors-white__1237431_pe917970_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-with-panel-glass-doors-white__0667793_pe714087_s5.jpg?f=xxs" alt="Product image">
+                                <img src="https://www.ikea.com/in/en/images/products/vittsjoe-nest-of-tables-set-of-2-black-brown-glass__1438193_pe984637_s5.jpg?f=xxs" alt="Hover image">
+                                
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">BRIMNES</h6>
+                                <p class="product-desc">Day-bed frame with 2 drawers, white</p>
+
+                                <div class="price">
+                                <span class="current">Rs.22,490</span>
+                                <span class="old">Rs.24,990</span>
+                                </div>
+
+                                <p class="offer mb-1">10% off, save Rs.2,500</p>
+                                <div class="starss">
+                                    <span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (1301)</span> <br>
+                                </div>
+                                <div class="iconss mt-2">
+                                    <span><i class="bi bi-bag-plus fs-5 "></i></span>
+                                    <span><i class="bi bi-heart fs-5 ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="ikea-footer mt-5 pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">Join IKEA Family</h6>
+                <p class="small text-muted">
+                Enjoy member-only discounts & offers, early access to IKEA sale,
+                delicious food offers and much more. Join for free.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join the club
+                </a>
+
+                <h6 class="fw-bold mt-4">IKEA Business Network</h6>
+                <p class="small text-muted">
+                Join the membership program for business customers with exciting
+                benefits and features. Join us for free and enjoy member discounts,
+                quick-fix tips, online tutorials and a lot more.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join now
+                </a>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">IKEA Family</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Join IKEA Family</a></li>
+                <li><a href="#">Member offers</a></li>
+                <li><a href="#">Workshops & Events</a></li>
+                </ul>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Services</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Delivery Service</a></li>
+                <li><a href="#">Click & collect</a></li>
+                <li><a href="#">Personal shopper</a></li>
+                <li><a href="#">Online planning tool</a></li>
+                <li><a href="#">Assembly Service</a></li>
+                <li><a href="#">Measuring Service</a></li>
+                <li><a href="#">Kitchen Planning</a></li>
+                <li><a href="#">Installation Service</a></li>
+                <li><a href="#">Track & manage your order</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Recycle Program</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Help</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">How to shop</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Prices and price tags</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Damaged articles claim</a></li>
+                <li><a href="#">GST rate revision</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">About IKEA</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">This is IKEA</a></li>
+                <li><a href="#">Careers at IKEA</a></li>
+                <li><a href="#">CSR Policy</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">IKEA Stores</a></li>
+                <li><a href="#">IKEA Food</a></li>
+                <li><a href="#">IKEA for Business</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+          
+            <hr class="mt-5">
+
+            <div class="row align-items-center gy-3 pb-4">
+
+            <div class="col-md-6 d-flex gap-3">
+                <i class="bi bi-facebook footer-icon"></i>
+                <i class="bi bi-instagram footer-icon"></i>
+                <i class="bi bi-twitter-x footer-icon"></i>
+                <i class="bi bi-youtube footer-icon"></i>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <button class="btn btn-outline-dark rounded-pill px-3">
+                <i class="bi bi-globe"></i> IN | English
+                </button>
+            </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between small text-muted pb-3 flex-wrap gap-2">
+            <span>© Inter IKEA Systems B.V. 2000-2026</span>
+            <div class="d-flex gap-3">
+                <a href="#" class="footer-link">Privacy policy</a>
+                <a href="#" class="footer-link">Cookie policy</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+            </div>
+            </div>
+
+        </div>
+</footer>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

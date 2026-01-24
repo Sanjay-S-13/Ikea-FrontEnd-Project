@@ -1,0 +1,131 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+.search-box {
+    max-width: 480px;   
+    width: 100%;
+}
+.navbarcontentp{
+    text-decoration: none;
+}
+.navbarcontentp:hover {
+    text-decoration: underline;
+}
+.iconinnavbar{
+    width: 30px;
+    height: auto;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 100px;
+}
+.iconinnavbar:hover{
+    background-color: #c5c5c5;  
+}
+#locationPath{
+    margin-left: 45px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.ikea-footer {
+  background-color: #f5f5f5;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  font-size: 14px;
+  color: #111;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.titles{
+    margin-left: -40px;
+}
+.container-fluid-a {
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+#leftcolimg {
+    width: 681px;
+    height: 794px;
+    object-fit: cover;
+    grid-row: span 2;
+}
+
+.right-col,
+.right-end-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#secA, #secD {
+    width: 334px;
+    height: 335px;
+    object-fit: cover;
+}
+#secB, #secC {
+    width: 334px;
+    height: 447px;
+    object-fit: cover;
+}
+
+html, body {
+    overflow-x: hidden;
+} .img-box {
+    position: relative;
+    width: fit-content;
+}
+
+.img-box img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    
+}
+
+
+.img-text h4,
+.img-text h5 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.img-text p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+.img-text:hover{
+    text-decoration: underline;
+}
