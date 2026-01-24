@@ -79,13 +79,9 @@ html, body {
 .category-card-2-img-2 {
     height: 323px;
     width: 323px;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.category-card-3:hover img {
-    opacity: 0.95;
-    transform: scale(1.02);
-}
+
 
 .category-card-3:nth-child(1):hover img {
     content: url("https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-with-glass-doors-black-oak-effect__1104585_pe867753_s5.jpg?f=m");
@@ -135,12 +131,8 @@ html, body {
     border-radius: 8px;
     padding: 12px;
     flex-shrink: 0;
-    transition: box-shadow 0.3s ease;
 }
 
-.category-card-3:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
 
 .category-card-2-img-2 {
     width: 100%;
