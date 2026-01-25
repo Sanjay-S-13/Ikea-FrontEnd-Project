@@ -32,7 +32,7 @@
         
         <div class="col mt-5">
 
-            <form>
+            <form onsubmit="return validateSignup()">
 
                 <span>
                     Become a member of IKEA Family today. Did we mention it's free to <br>join? <span style="text-decoration: underline; cursor: pointer;">Get the details.</span>
@@ -79,11 +79,11 @@
                 <div class="form-text">
                     Make sure your password contains:
                     <pre>
-    Minimum of 8 characters
-    One UPPERCASE letter
-    One lowercase letter
-    At least one number or one special character
-    No more than two repeated characters in a row
+                        Minimum of 8 characters
+                        One UPPERCASE letter
+                        One lowercase letter
+                        At least one number or one special character
+                        No more than two repeated characters in a row
                     </pre>
                 </div>
 
@@ -120,6 +120,14 @@
         </div>
     </div> 
 </div>
+
+<script>
+function validateSignup() {
+    alert("Signup successful! Proceeding to phone verification...");
+    window.location.href = "../Home/index.html";
+    return false;
+}
+</script>
 
 </body>
 </html>
