@@ -11,6 +11,20 @@ body {
 .navbarcontentp:hover {
     text-decoration: underline;
 }
+#successAlert {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  z-index: 9999;
+  transition: top 0.5s ease-in-out;
+}
+
+#successAlert.show {
+  top: 20px;
+}
 .iconinnavbar{
     width: 30px;
     height: auto;
