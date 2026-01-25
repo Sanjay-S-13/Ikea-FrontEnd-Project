@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA India-Affordable home furniture, designs & ideas - IKEA</title>
+    <link rel="stylesheet" href="pc.css">
+    <link rel="shortcut icon" href="https://www.ikea.com/global/assets/logos/brand/ikea.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="text-white py-3" style="background-color: black;">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-globe"></i>
+                <a href="../Home/index.html" class="navbarcontentp text-white">IN | English</a>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-truck"></i>
+                    <a href="../Home/index.html" class="navbarcontentp text-white">Enter postal code</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shop-window"></i>
+                    <a href="../Home/index.html" class="navbarcontentp text-white" >Select store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!--NavBar-->
+    <div class="navbar py-3 ms-5">
+        <div class="d-flex align-items-center w-100 gap-4">
+
+        <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg"
+            height="40" alt="IKEA">
+
+        <div class="d-none d-lg-flex gap-4 ms-4 ">
+            <a href="../Products/products.html" style="text-decoration: underline;" class="navbarcontentp text-dark">Products</a>
+            <a href="../Article/article.html" class="navbarcontentp text-dark">Article</a>
+            <a href="../Offers/offers.html" class="navbarcontentp text-dark">Offers</a>
+            <a href="../Inspiration/ins.html" class="navbarcontentp text-dark">Inspiration</a>
+            <a href="../Design&support/d&s.html" class="navbarcontentp text-dark">Design/Support</a>
+        </div>
+
+        <div class="flex-grow-1 search-box">
+            <div class="input-group rounded-pill bg-light px-2">
+            <span class="input-group-text bg-light border-0">
+                <i  class="bi bi-search"></i>
+            </span>
+
+            <input type="text"
+                    class="form-control bg-light border-0"
+                    placeholder="What are you looking for?">
+
+            <span class="input-group-text bg-light border-0">
+                <i class="bi bi-camera"></i>
+            </span>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-person"></i>
+            <a href="../Signin/signin.html" class="navbarcontentp d-none d-md-inline text-dark">Hey! Log in</a >
+        </div>
+
+        <div class="d-flex gap-4  justify-content-center align-items-center">
+            <i class="bi bi-heart fs-5 iconinnavbar"></i>
+            <i class="bi bi-minecart-loaded fs-5 iconinnavbar"></i>
+        </div>
+        </div>
+    </div>
+
+    <!--Card-->
+
+    <div class="section">
+        <div class="container my-5">
+        <div class="row g-4">
+
+           
+            <div class="col-lg-1 col-md-2 d-flex flex-column gap-2">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg?f=xxs"
+                    class="thumb active" onclick="changeImage(this)">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1101301_pe866570_s5.jpg?f=xxs"
+                    class="thumb" onclick="changeImage(this)">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1092117_pe863030_s5.jpg?f=xl"
+                    class="thumb" onclick="changeImage(this)">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__0734641_pe739552_s5.jpg?f=xl"
+                    class="thumb" onclick="changeImage(this)">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1026757_pe834509_s5.jpg?f=xl"
+                    class="thumb" onclick="changeImage(this)">
+                <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1026756_pe834512_s5.jpg?f=xl"
+                    class="thumb" onclick="changeImage(this)">
+                <!-- <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1116347_pe872493_s5.jpg?f=xl"
+                    class="thumb" onclick="changeImage(this)"> -->
+            </div>
+
+            
+            <div class="col-lg-6 col-md-10 position-relative">
+                <img id="mainImage"
+                    src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg?f=xxxl"
+                    class="img-fluid rounded">
+            </div>
+
+            
+            <div class="col-lg-5">
+
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                    <h5 class="fw-bold">BRIMNES</h5>
+                    <p class="text-muted mb-1">
+                        Day-bed frame with 2 drawers, white,<br>
+                        80×200 cm (31 1/2×78 3/4")
+                    </p>
+                    </div>
+                    <i class="bi bi-heart fs-4"></i>
+                </div>
+
+                <h3 class="fw-bold mt-3">Rs.22,490</h3>
+                <p class="text-primary fw-semibold mb-1">10% off, save Rs.2,500</p>
+                <p class="text-muted">Regular price: Rs.24,990<br>Price incl. of all taxes</p>
+
+                <div class="mb-3">
+                    ★★★★☆ <span class="text-muted">(1301)</span>
+                </div>
+
+                <p class="fw-semibold mb-1">EMI starts at ₹2,041/month</p>
+                <p class="text-muted small">Mattress and bedlinen sold separately.</p>
+
+                <hr>
+
+                <h6 class="fw-bold">Complete with</h6>
+                <div class="border rounded p-3 d-flex justify-content-between align-items-center mb-3">
+                    <span>Foam mattresses</span>
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+
+                <h6 class="fw-bold">How to get it</h6>
+                <div class="border rounded p-3 mb-2 d-flex justify-content-between">
+                    <div><i class="bi bi-truck me-2"></i>Delivery</div>
+                    <span class="text-muted">Check availability</span>
+                </div>
+
+                <div class="border rounded p-3 mb-4 d-flex justify-content-between">
+                    <div><i class="bi bi-shop me-2"></i>In store</div>
+                    <span class="text-muted">Check availability</span>
+                </div>
+
+                <button class="btn btn-primary w-100 rounded-pill py-3 fw-semibold">
+                    Add to bag
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="p ">
+                    5 year warranty
+                </div>
+                <div class="h4 mt-3" style="font-weight: 300;">
+                    A sofa by day and a bed for one – or two – by night. The two large drawers give plenty of space for duvets, pillows and bed linen. A smart solution when you live in a small space.
+                </div>
+                <br><br>
+                <div class="p">
+                    Delivery and assembly prices not included.
+                </div>
+                <div class="p" style="font-weight: 200;">
+                    Article number 305.036.55
+                </div>
+
+        <hr class="mt-5">
+
+                <button class="btn mt-4 pb-4 fw-bold" style="font-size: xx-large;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Product Details<i class="bi bi-arrow-right ms-4"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 id="offcanvasRightLabel fw-bolder">Product Details</h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" style="font-weight: 300;">
+                           <span style="font-weight: 500;"> MRP Rs.39,984 (incl. tax) </span> <br> <br>
+
+                            With some soft, fluffy pillows as back support, you easily transform this day-bed into a comfortable sofa or chaise longue. <br> <br>
+
+                            Transform your sofa into a single bed in no time and maximise the use of floor space. Perfect for a teenager's bedroom or where you don't have a lot of space. <br> <br>
+
+                            With this day-bed you quickly and easily create space for overnight guests. Just pull out the bed base and you get a double bed in no time. <br> <br>
+
+                            The large drawers have space for extra duvets, pillows, linens or other things you need to store, but want to have close at hand. <br> <br>
+
+                            This simple design fits together with many different styles. Keep it as it is or create a cosy corner with lots of pillows. <br> <br>
+
+                            <br>
+                            <span style="font-weight: 500;">Designer</span> <br>
+
+                            K Hagberg/M Hagberg <br><br>
+
+                            <span style="font-weight: 500;">Country of Origin</span> <br>
+                            CHINA <br><br>
+
+                            <span style="font-weight: 500;">Importer, Packer & Marketer</span> <br>
+                            IKEA India Pvt. Ltd., Plot C1, Commercial Complex, Sector 47, Urban Estate, near BPCL Petrol Pump, Gurgaon- 122018, Haryana
+                        </div>
+                    </div>
+
+                    <br>
+                    <hr>
+
+                    <button class="btn mt-4 pb-4 fw-bold" style="font-size: xx-large;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">Measurements<i class="bi bi-arrow-right ms-4"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 id="offcanvasRightLabel fw-bold">Measurements</h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" style="font-weight: 300;">
+                           <span style="font-weight: 500;">Length : </span>
+                            205 cm (80 3/4 ") <br> <br>
+                            <span style="font-weight: 500;">Width: </span> 87 cm (34 1/4 ") <br> <br>
+                            <span style="font-weight: 500;">Height: </span> 58 cm (22 7/8 ") <br> <br>
+                            <span style="font-weight: 500;">Width of drawer (inside):</span> 85 cm (33 1/2 ") <br> <br>
+                            <span style="font-weight: 500;">Depth of drawer (inside):</span> 54 cm (21 1/4 ") <br> <br>
+                            <span style="font-weight: 500;">Height of drawer (inside):</span> 16 cm (6 1/4 ") <br> <br>
+                            <span style="font-weight: 500;">Bed width:</span> 168 cm (66 1/8 ") <br> <br>
+                            <span style="font-weight: 500;">Bed length:</span> 205 cm (80 3/4 ") <br> <br>
+                            <span style="font-weight: 500;">Max. load/drawer:</span> 20 kg (44 lb) <br> <br>
+                            <span style="font-weight: 500;">Mattress length:</span> 200 cm (78 3/4 ") <br> <br>
+                            <span style="font-weight: 500;">Mattress width:</span> 80 cm (31 1/2 ")
+
+
+                            <img src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg?f=xxl" style="height: auto; width: 200px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="ikea-footer mt-5 pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">Join IKEA Family</h6>
+                <p class="small text-muted">
+                Enjoy member-only discounts & offers, early access to IKEA sale,
+                delicious food offers and much more. Join for free.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join the club
+                </a>
+
+                <h6 class="fw-bold mt-4">IKEA Business Network</h6>
+                <p class="small text-muted">
+                Join the membership program for business customers with exciting
+                benefits and features. Join us for free and enjoy member discounts,
+                quick-fix tips, online tutorials and a lot more.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join now
+                </a>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">IKEA Family</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Join IKEA Family</a></li>
+                <li><a href="#">Member offers</a></li>
+                <li><a href="#">Workshops & Events</a></li>
+                </ul>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Services</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Delivery Service</a></li>
+                <li><a href="#">Click & collect</a></li>
+                <li><a href="#">Personal shopper</a></li>
+                <li><a href="#">Online planning tool</a></li>
+                <li><a href="#">Assembly Service</a></li>
+                <li><a href="#">Measuring Service</a></li>
+                <li><a href="#">Kitchen Planning</a></li>
+                <li><a href="#">Installation Service</a></li>
+                <li><a href="#">Track & manage your order</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Recycle Program</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Help</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">How to shop</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Prices and price tags</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Damaged articles claim</a></li>
+                <li><a href="#">GST rate revision</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">About IKEA</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">This is IKEA</a></li>
+                <li><a href="#">Careers at IKEA</a></li>
+                <li><a href="#">CSR Policy</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">IKEA Stores</a></li>
+                <li><a href="#">IKEA Food</a></li>
+                <li><a href="#">IKEA for Business</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+          
+            <hr class="mt-5">
+
+            <div class="row align-items-center gy-3 pb-4">
+
+            <div class="col-md-6 d-flex gap-3">
+                <i class="bi bi-facebook footer-icon"></i>
+                <i class="bi bi-instagram footer-icon"></i>
+                <i class="bi bi-twitter-x footer-icon"></i>
+                <i class="bi bi-youtube footer-icon"></i>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <button class="btn btn-outline-dark rounded-pill px-3">
+                <i class="bi bi-globe"></i> IN | English
+                </button>
+            </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between small text-muted pb-3 flex-wrap gap-2">
+            <span>© Inter IKEA Systems B.V. 2000-2026</span>
+            <div class="d-flex gap-3">
+                <a href="#" class="footer-link">Privacy policy</a>
+                <a href="#" class="footer-link">Cookie policy</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+            </div>
+            </div>
+
+            </div>
+    </footer>   
+
+    </div>
+
+    <script>
+        function changeImage(el) {
+        document.getElementById("mainImage").src = el.src.replace("xxs", "xxxl");
+
+        document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active"));
+        el.classList.add("active");
+        }
+    </script>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

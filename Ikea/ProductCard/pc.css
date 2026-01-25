@@ -1,0 +1,75 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+.search-box {
+    max-width: 480px;   
+    width: 100%;
+}
+.navbarcontentp{
+    text-decoration: none;
+}
+.navbarcontentp:hover {
+    text-decoration: underline;
+}
+.iconinnavbar{
+    width: 30px;
+    height: auto;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 100px;
+}
+.iconinnavbar:hover{
+    background-color: #c5c5c5;  
+}
+.thumb {
+  width: 100%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.thumb.active {
+  border: 2px solid #0058a3;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.ikea-footer {
+  background-color: #f5f5f5;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  font-size: 14px;
+  color: #111;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  font-size: 20px;
+  cursor: pointer;
+}

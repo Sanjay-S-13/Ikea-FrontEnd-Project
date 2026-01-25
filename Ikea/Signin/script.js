@@ -13,8 +13,8 @@ function func(){
             return false;
         }
         else if(user.value=="Sanjay" && pass.value=="13"){
-            alert("Login successful")
-            location.href = "../index.html";
+            alert("Login successful");
+            location.href = "../Home/index.html";
             return false;
         }
         else{
