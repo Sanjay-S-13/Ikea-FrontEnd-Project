@@ -65,7 +65,7 @@ body {
 /* Big image */
 #leftcolimg {
     width: 681px;
-    height: 794px;
+    height: 800px;
     object-fit: cover;
     grid-row: span 2;
 }
