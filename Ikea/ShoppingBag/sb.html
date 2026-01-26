@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA/Shopping Bag
+    </title>
+    <link rel="stylesheet" href="sbcss.css">
+    <link rel="shortcut icon" href="https://www.ikea.com/global/assets/logos/brand/ikea.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="text-white py-3" style="background-color: black;">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-house"></i>
+                <a href="../Home/index.html" class="navbarcontentp text-white">Home</a>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-truck"></i>
+                    <a href="../Home/index.html" class="navbarcontentp text-white">Enter postal code</a>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shop-window"></i>
+                    <a href="../Home/index.html" class="navbarcontentp text-white" >Select store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!--NavBar-->
+    <div class="navbar py-3 ms-5">
+    <div class="d-flex align-items-center w-100 gap-4">
+
+      <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg"
+           height="40" alt="IKEA">
+
+      <div class="d-none d-lg-flex gap-4 ms-4 ">
+        <a href="../Products/products.html" style="text-decoration: underline;" class="navbarcontentp text-dark">Products</a>
+        <a href="../Article/article.html" class="navbarcontentp text-dark">Article</a>
+        <a href="../Offers/offers.html" class="navbarcontentp text-dark">Offers</a>
+        <a href="../Inspiration/ins.html" class="navbarcontentp text-dark" >Inspiration</a>
+        <a href="../Design&support/d&s.html" class="navbarcontentp text-dark">Design/Support</a>
+      </div>
+
+      <div class="flex-grow-1 search-box">
+        <div class="input-group rounded-pill bg-light px-2">
+          <span class="input-group-text bg-light border-0">
+            <i  class="bi bi-search"></i>
+          </span>
+
+          <input type="text"
+                 class="form-control bg-light border-0"
+                 placeholder="What are you looking for?">
+
+          <span class="input-group-text bg-light border-0">
+            <i class="bi bi-camera"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-person"></i>
+        <a href="../Signin/signin.html" class="navbarcontentp d-none d-md-inline text-dark">Hey! Log in</a >
+      </div>
+
+      <div class="d-flex gap-4  justify-content-center align-items-center">
+        <i class="bi bi-heart fs-5 iconinnavbar"></i>
+        <i class="bi bi-minecart-loaded fs-5 iconinnavbar"></i>
+      </div>
+    </div>
+    </div>
+
+
+    <!--Section-->
+    <div class="section">
+        <div class="container-fluid">
+            <div class="row bg-white mt-5 ms-5">
+                <div class="col-sm-12 col-md-7">
+                    <div class="h1 fw-bolder">Shopping Bag</div>
+                    <br>
+                    <div class="btn fw-semibold btn-outline-dark p-3">
+                        <i class="bi bi-geo-alt-fill me-4"></i>
+                        <span> Check delivery and other services availability </span>
+                    </div>
+                    <br>
+                    <div class="row mt-4 border-0 p-3">
+                        <div class="col-sm-2">
+                            <img style="height: 120px;" src="https://www.ikea.com/in/en/images/products/brimnes-day-bed-frame-with-2-drawers-white__1161827_pe889528_s5.jpg?f=xxxs" alt="">
+                        </div>
+                        <div class="col-sm-7 ms-2">
+                            <div class="h5 fw-bold">
+                                BRIMNES <br>
+                            </div>
+                            <div style="font-weight: 300;" class="p">day-bed frame with 2 drawers, white, 80x200 cm (31 1/2x78 3/4 ")</div>
+                        </div>
+                        <div class="col-sm-2 h5 fw-bold">
+                            Rs.24,490
+                            <br>
+                            <br>
+                            <div class="addOrDel justify-content-center align-items-center d-flex">
+                            <i class="bi bi-trash3"></i> 
+                            <div class="dropdown ms-4">
+                                <button class="btn fw-semibold btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                    <li><a class="dropdown-item" href="#">+more</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="p fw-bold">Order summary</div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Products</p>
+                        <p class="mb-0 fw-bold">Rs.24,000</p>
+                    </div>
+                    <div class="col-sm-12 mt-3" style="color: gray;">
+                        Shipping costs are calculated at checkout
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0" style="font-weight: 800;">Total including GST</p>
+                        <p class="mb-0 fw-bolder fs-4">Rs.24,000</p>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/ikea-family-credit-card.svg" alt="">
+                        <p class="mb-0 fw-bold">Save Rs.2,500 with <a style="color: #0058a3;" href="../Signin/signin.html">IKEA Family </a> <br> <span style="text-decoration: underline; font-weight: 300;">Join or log in</span></p>
+                    </div>
+                    <hr>
+                    <a href="../Signin/signin.html">
+                    <div class="btn fw-semibold btn-outline-dark p-3">
+                         Continue to checkout <i class="bi bi-arrow-right ms-5"></i>
+                    </div>
+                    </a>
+
+                    <p class="mt-3" style="text-decoration: underline; font-weight: 200; font-size: medium;">365-day worry-free return policy</p>
+
+                    <p class="mt-3" style="text-decoration: underline; font-weight: 200; font-size: medium;">Tell us about your checkout experience</p>
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container px-4">
+          <div class="section-title mt-5">Everyday essentials for you</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/kuggis-box-with-lid-black-blue-bamboo__1503560_pe1007899_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">KUGGIS</div>
+                        <div class="product-desc">Box with lid, black-blue/bamboo</div>
+                        <span class="price-box">Rs.899</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/stuk-organiser-white__1014395_pe829639_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">STUK</div>
+                        <div class="product-desc">Organizer, white, 34x51x10 cm</div>
+                        <span class="price-box">Rs.499</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/sandmott-cushion-bright-red-bright-pink__1284483_pe932899_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">SANDMOTT</div>
+                        <div class="product-desc">Cushion, bright red/bright pink</div>
+                        <span class="price-box">Rs.299</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/mossmott-throw-black-white__1284724_pe933126_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">MOSSMOTT</div>
+                        <div class="product-desc">Throw, black/white, 120x160 cm</div>
+                        <span class="price-box">Rs.699</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/smasporre-pillow-high__1438932_pe985020_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">SMÅSPORRE</div>
+                        <div class="product-desc">Pillow, high, 50x80 cm</div>
+                        <span class="price-box">Rs.999</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/rosenskaerm-ergonomic-pillow-side-back-sleeper__0722542_pe733642_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">ROSENSKÄRM</div>
+                        <div class="product-desc">Ergonomic pillow, side/back sleeper</div>
+                        <span class="price-box">Rs.1,590</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/samla-box-with-lid-transparent__0711814_pe728493_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">SAMLA</div>
+                        <div class="product-desc">Box with lid, transparent</div>
+                        <span class="price-box">Rs.129</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/trixig-stick-on-floor-protectors-set-of-20-grey__0662645_pe712772_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">TRIXIG</div>
+                        <div class="product-desc">Stick-on floor protectors, set of 20</div>
+                        <span class="price-box">Rs.49</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/nojig-organiser-plastic-beige__0954730_pe804516_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">NOJIG</div>
+                        <div class="product-desc">Organiser, plastic, beige</div>
+                        <span class="price-box">Rs.39</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/fniss-waste-bin-white__0711299_pe728137_s5.jpg?f=xxs">
+                    <div>
+                        <div class="product-name">FNISS</div>
+                        <div class="product-desc">Waste bin, white, 10 l</div>
+                        <span class="price-box">Rs.99</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/lapptag-throw-off-white__1249622_pe923392_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">LAPPTÅG</div>
+                        <div class="product-desc">Throw, off-white, 130x170 cm</div>
+                        <span class="price-box">Rs.1,290</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/daggkapor-throw-green__1346593_pe951066_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">DAGGKÅPOR</div>
+                        <div class="product-desc">Throw, green, 130x170 cm</div>
+                        <span class="price-box">Rs.899</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/holmvi-throw-blue__1385051_pe963137_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">HOLMVI</div>
+                        <div class="product-desc">Throw, blue, 120x160 cm</div>
+                        <span class="price-box">Rs.399</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/thorgun-throw-off-white__1022907_pe832996_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">THORGUN</div>
+                        <div class="product-desc">Throw, off-white, 120x160 cm</div>
+                        <span class="price-box">Rs.249</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/daggkapor-throw-dark-grey__1346552_pe951033_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">DAGGKÅPOR</div>
+                        <div class="product-desc">Throw, dark grey, 130x170 cm</div>
+                        <span class="price-box">Rs.899</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/rosenskaerm-ergonomic-pillow-side-back-sleeper__0722542_pe733642_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">ROSENSKÄRM</div>
+                        <div class="product-desc">Ergonomic pillow, side/back sleeper</div>
+                        <span class="price-box">Rs.1,590</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/loekstamfly-ergonomic-pillow-side-back-sleeper__1311056_pe939995_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">LÖKSTAMFLY</div>
+                        <div class="product-desc">Ergonomic pillow, side/back sleeper</div>
+                        <span class="price-box">Rs.1,990</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/klubbsporre-ergonomic-pillow-side-back-sleeper__0792296_pe764700_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">KLUBBSPORRE</div>
+                        <div class="product-desc">Ergonomic pillow, multi-position</div>
+                        <span class="price-box">Rs.3,490</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://www.ikea.com/in/en/images/products/nordstaloert-ergonomic-pillow-side-back-sleeper__1268412_pe928740_s5.jpg?f=xxxs">
+                    <div>
+                        <div class="product-name">NORDSTÅLÖRT</div>
+                        <div class="product-desc">Ergonomic pillow, side/back sleeper</div>
+                        <span class="price-box">Rs.1,290</span>
+                    </div>
+                    <div class="cart-icon"><i class="bi bi-cart"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="ikea-footer mt-5 pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">Join IKEA Family</h6>
+                <p class="small text-muted">
+                Enjoy member-only discounts & offers, early access to IKEA sale,
+                delicious food offers and much more. Join for free.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join the club
+                </a>
+
+                <h6 class="fw-bold mt-4">IKEA Business Network</h6>
+                <p class="small text-muted">
+                Join the membership program for business customers with exciting
+                benefits and features. Join us for free and enjoy member discounts,
+                quick-fix tips, online tutorials and a lot more.
+                </p>
+                <a href="#" class="footer-link">See more</a>
+                <br>
+                <a href="../Signup/signup.html" class="btn btn-dark rounded-pill mt-3 px-4 py-2">
+                Join now
+                </a>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">IKEA Family</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Join IKEA Family</a></li>
+                <li><a href="#">Member offers</a></li>
+                <li><a href="#">Workshops & Events</a></li>
+                </ul>
+            </div>
+
+        
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Services</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">Delivery Service</a></li>
+                <li><a href="#">Click & collect</a></li>
+                <li><a href="#">Personal shopper</a></li>
+                <li><a href="#">Online planning tool</a></li>
+                <li><a href="#">Assembly Service</a></li>
+                <li><a href="#">Measuring Service</a></li>
+                <li><a href="#">Kitchen Planning</a></li>
+                <li><a href="#">Installation Service</a></li>
+                <li><a href="#">Track & manage your order</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Recycle Program</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold">Help</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">How to shop</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Prices and price tags</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Damaged articles claim</a></li>
+                <li><a href="#">GST rate revision</a></li>
+                </ul>
+            </div>
+
+          
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold">About IKEA</h6>
+                <ul class="list-unstyled footer-list">
+                <li><a href="#">This is IKEA</a></li>
+                <li><a href="#">Careers at IKEA</a></li>
+                <li><a href="#">CSR Policy</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">IKEA Stores</a></li>
+                <li><a href="#">IKEA Food</a></li>
+                <li><a href="#">IKEA for Business</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+          
+            <hr class="mt-5">
+
+            <div class="row align-items-center gy-3 pb-4">
+
+            <div class="col-md-6 d-flex gap-3">
+                <i class="bi bi-facebook footer-icon"></i>
+                <i class="bi bi-instagram footer-icon"></i>
+                <i class="bi bi-twitter-x footer-icon"></i>
+                <i class="bi bi-youtube footer-icon"></i>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <button class="btn btn-outline-dark rounded-pill px-3">
+                <i class="bi bi-globe"></i> IN | English
+                </button>
+            </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between small text-muted pb-3 flex-wrap gap-2">
+            <span>© Inter IKEA Systems B.V. 2000-2026</span>
+            <div class="d-flex gap-3">
+                <a href="#" class="footer-link">Privacy policy</a>
+                <a href="#" class="footer-link">Cookie policy</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+            </div>
+            </div>
+
+        </div>
+</footer>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
